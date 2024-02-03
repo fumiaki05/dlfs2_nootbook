@@ -6,9 +6,7 @@ RUN apt update && \
     apt install -y build-essential
 
 # Install Python modules
-RUN pip install astroquery \
-                reproject \
-                ads
+RUN pip install nltk
 
 RUN mkdir /work
 
@@ -18,5 +16,5 @@ CMD ["jupyter", "notebook", \
      "--ip=0.0.0.0", \
      "--allow-root", \
      "--no-browser", \
-     "--NotebookApp.token=''", \
+     "--NotebookApp.token='XuULcZTS5LYw'", \
      "--NotebookApp.notebook_dir='/work'"]
