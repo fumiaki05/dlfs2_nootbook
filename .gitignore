@@ -1,3 +1,5 @@
 .Trash-*
 .org
+.env
 notebook/.ipynb_checkpoints
+*.pkl
